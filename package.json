@@ -1,0 +1,45 @@
+{
+  "name": "my-tsx-snippets",
+  "displayName": "My TSX Snippets",
+  "description": "Shared snippets used inside NIO FE team",
+  "version": "0.0.1",
+  "publisher": "chenyong",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "icon": "images/icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "scripts": {
+    "clean": "rm -fv *.vsix",
+    "pkg": "yarn clean && vsce package",
+    "market": "vsce publish",
+    "code-install": "code --install-extension *.vsix",
+    "code-reinstall": "yarn pkg && yarn code-install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimengio/jm-snippets"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}

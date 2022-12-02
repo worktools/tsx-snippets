@@ -1,0 +1,37 @@
+{
+  "Create a new Component": {
+    "prefix": "dc",
+    "body": [
+      "",
+      "import { defineComponent } from 'vue';",
+      "import { onMounted, ref, watch } from 'vue';",
+      "",
+      "import { useRoute, useRouter } from 'vue-router';",
+      "",
+      "const App = defineComponent({",
+      "  props: {",
+      "    appId: {",
+      "      type: String,",
+      "      default: '',",
+      "    },",
+      "  },",
+      "  emits: [],",
+      "  setup(props, {emit}) {",
+      "",
+      "    const data = ref({});",
+      "",
+      "    onMounted(() => {",
+      "      // TODO",
+      "    });",
+      "    return () => (",
+      "      <div>TODO</div>",
+      "    );",
+      "  },",
+      "});",
+      "",
+      "export default App;",
+      ""
+    ],
+    "description": "Create a new component"
+  }
+}
